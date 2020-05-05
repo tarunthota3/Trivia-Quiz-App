@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="157dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Welcome to Trivia App"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTrivia"
+        android:layout_width="328dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/trivia2" />
+
+    <TextView
+        android:id="@+id/textViewTriviaReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia Ready"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTrivia" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStartTrivia"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:enabled="false"
+        android:text="Start Trivia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+</androidx.constraintlayout.widget.ConstraintLayout>
